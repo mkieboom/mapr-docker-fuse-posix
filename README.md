@@ -7,8 +7,8 @@ cd mapr-docker-fuse-posix
 ```
 
 ##### Build the container  
-# You can override the default MapR and MEP version by providing them as build arguments.
 ```
+# You can override the default MapR and MEP version by providing them as build arguments.
 docker build -t mkieboom/mapr-docker-fuse-posix --build-arg MAPR_VERSION=5.2.2 --build-arg MEP_VERSION=3.0.1 .
 ```
 
