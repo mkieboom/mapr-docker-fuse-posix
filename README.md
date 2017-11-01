@@ -53,22 +53,3 @@ docker run -d \
 -e MAPR_MOUNT_PATH=/mapr \
 mkieboom/mapr-docker-fuse-posix
 ```
-
-##### Use psql to connect  
-```
-# Install psql client on any other machine  
-yum install -y postgresql
-```
-
-##### Connect to remote database  
-```
-psql -U mapr -h maprn01 -p 5432
-```
-
-##### Basic SQL testing
-```
-CREATE SCHEMA test;
-CREATE TABLE test.test (coltest varchar(20));
-insert into test.test (coltest) values ('It works!');
-SELECT * from test.test;
-```
